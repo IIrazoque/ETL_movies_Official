@@ -10,28 +10,33 @@ We used pd.read_csv(file_name, low_memory=False) function to convert the Kaggle 
 
 *Figure1. Defining ETL function to read three files*
 
-![This is an image]()
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure1.PNG)
 
 Showing all three dataframes wiki, Kaggle and ratings in Figures; 2, 3, 4.
 
 *Figure 2 - wiki_movies_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%202.PNG)
 
 *Figure 3 - Kaggle_metadata_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%203.PNG)
 
 *Figure 4 - ratings_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%204.PNG)
 
 ## Deliverable 2: Extract and Transform the Wikipedia Data
 
 In the first few steps we cleaned the wiki data by cleaning up the movie titles. Created a non-destructive copy and changed the movie titles into a new alternative tittles dictionary without changing the original data. We also cleaned up the columns names. Using the extract_transform_load function we were able to filter out for TV shows “Television series” and clean the “Box office”, “Budget”, “Release date”, “Running time” columns.  The cleaned wiki dataframe showin in figure 5. Figure 6 showing new column names.
 
 *Figure 5 – Cleaned wiki_movies_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%205.PNG)
 
 *Figure 6 – cleaned columns names in wiki_movies_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%206.PNG)
 
 ## Deliverable 3: Extract and Transform the Kaggle data
 
@@ -39,21 +44,26 @@ The same cleaning functions in wiki was used for the Kaggle dataset, but for Kag
 Wiki and Kaggle dataframes were merged (figure 7) to create and new dataframe called movies_df (figure 8). The combined columns were re-names, added missing values, dropped unnecessary columns to then merged with the ratings dataset.  
 
 *Figure 7 – Merged wiki and Kaggle dataframes*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%207.PNG)
 
 *Figure 8 – Merged dataframe movies_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%208.PNG)
 
 *Figure 9 – Newest dataframe movie_with_ratings_df*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/figure%209.PNG)
 
 ## Deliverable 4: Create the Movie Database
 Lastly we added our new movies_df and rating dataframes into SQL database. Figure 10 & 11
 
 *Figure 10 – movies_query.png*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/movies_query.PNG)
 
 *Figure 11 – ratings_query.png*
-![This is an image]()
+
+![This is an image](https://github.com/IIrazoque/ETL_movies_Official/blob/d38009268e9f04e35eda0106abb7d6500bed57fb/Resources/ratings_query.PNG)
 
 
